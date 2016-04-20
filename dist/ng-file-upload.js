@@ -5,6 +5,8 @@
  * @version 12.0.4
  */
 
+var angular = require('angular');
+
 if (window.XMLHttpRequest && !(window.FileAPI && FileAPI.shouldLoad)) {
   window.XMLHttpRequest.prototype.setRequestHeader = (function (orig) {
     return function (header, value) {
